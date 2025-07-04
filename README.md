@@ -20,10 +20,10 @@ O que você encontrará neste repositório:
 
  - prototipo do figma: [PodcastApp](https://www.figma.com/design/ECIzSfAWHcPJSi3HxkKdUr/PodcastAppChallenge?m=auto&t=WBSxPDFw8EJ0oCFy-1)
 
-![Referência  Protótipo](imagens/ref_figma_prototipo.png)
+![Referência  Protótipo](img/ref_figma_prototipo.png)
 
  ## Portfolio Plano de Teste
 
  - Site utilizado para elaboração do plano: [Saucedemo](https://saucedemo.com/)
 
-![Nome Site Saucedemo](imagens/site_saucedemo.png)
+![Nome Site Saucedemo](img/site_saucedemo.png)
