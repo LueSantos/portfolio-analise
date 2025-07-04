@@ -20,6 +20,8 @@ O que você encontrará neste repositório:
   <br>
 
 - **Critérios de Aceite (BDD/Gherkin):** Definições precisas das condições que uma funcionalidade deve satisfazer para ser considerada concluída e aceita. Utilizo a linguagem Gherkin (Dado/Quando/Então) para garantir clareza, automação potencial e alinhamento entre todos os envolvidos.
+  <br>
+  <br>
 
 
 ## Portfólio Análise de Requisitos 
