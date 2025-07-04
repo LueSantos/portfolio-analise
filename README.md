@@ -9,10 +9,16 @@ O que você encontrará neste repositório:
 
 - **Análise de Requisitos:** Descrevem as necessidades e expectativas dos stakeholders a partir de um protótipo inicial. Aqui, você verá como identifiquei e estruturei as funcionalidades do projeto, incluindo as Regras de Negócio essenciais para o seu funcionamento.
   <br>
+  <br>
+
 - **Plano de Teste:** Definem a estratégia e os critérios para testar o sistema. Este plano reflete uma visão abrangente para a validação da qualidade do sistema.
   <br>
+  <br>
+
 - **User Stories (Histórias de Usuário):** Representações das funcionalidades sob a perspectiva do usuário, elaboradas para facilitar a compreensão e a colaboração entre as equipes de produto, desenvolvimento e QA.
   <br>
+  <br>
+
 - **Critérios de Aceite (BDD/Gherkin):** Definições precisas das condições que uma funcionalidade deve satisfazer para ser considerada concluída e aceita. Utilizo a linguagem Gherkin (Dado/Quando/Então) para garantir clareza, automação potencial e alinhamento entre todos os envolvidos.
 
 
