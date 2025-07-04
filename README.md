@@ -24,13 +24,13 @@ O que você encontrará neste repositório:
   <br>
 
 
-## Portfólio Análise de Requisitos 
+## Portfólio | Análise de Requisitos 
 
- - prototipo do figma: [PodcastApp](https://www.figma.com/design/ECIzSfAWHcPJSi3HxkKdUr/PodcastAppChallenge?m=auto&t=WBSxPDFw8EJ0oCFy-1)
+ - protótipo do figma: [PodcastApp](https://www.figma.com/design/ECIzSfAWHcPJSi3HxkKdUr/PodcastAppChallenge?m=auto&t=WBSxPDFw8EJ0oCFy-1)
 
 ![Referência  Protótipo](img/ref_figma_prototipo.png)
 
- ## Portfolio Plano de Teste
+ ## Portfólio | Plano de Teste
 
  - Site utilizado para elaboração do plano: [Saucedemo](https://saucedemo.com/)
 
