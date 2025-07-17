@@ -42,19 +42,19 @@ Para os Critérios de Aceite, utilizamos a linguagem Gherkin (BDD).
 ![Referência  Protótipo](/img/tela_de_onbording.png)
 
 
-##### Descrição da Tela:
+#### Descrição da Tela:
  É a primeira tela que o usuário vê ao abrir o aplicativo, com o logotipo do Podspot, uma breve descrição e um botão para iniciar.
 
-##### User Stories: 
+#### User Stories: 
 Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descrição do aplicativo para entender sua proposta.
 
-##### Regras de Negócio:
+#### Regras de Negócio:
 **RN01.01:** A tela inicial deve conter o nome do aplicativo "Podspot".
 **RN01.02:** Deve haver uma frase descritiva: "Listen to all of your favorite podcasts in one spot.".
 **RN01.03:** Deve haver um botão de ação com o texto "Get Started".
 <br>
 
-##### Critérios de Aceite (Gherkin - BDD):
+#### Critérios de Aceite (Gherkin - BDD):
 <br>
 
 **Cenário: Visualização da tela inicial**
@@ -77,12 +77,12 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 
 **Descrição da Tela:** Exibe um conteúdo diversificado como "Top 10 Podcasts", "Categories" e "Recommended", além de uma barra de navegação inferior.
 
-##### User Stories:
+#### User Stories:
 
 Como um usuário, **eu quero** poder explorar e navegar facilmente pelo aplicativo, visualizando diferentes conteúdos como "Top 10 Podcasts", "Categorias" e "Recomendações".  Acessar o meu perfil e utilizar uma barra de navegação para as seções principais (Home, Microfone, Pesquisa) para que eu possa acessar de forma rápida simples.
 
 
-##### Regras de Negócio:
+#### Regras de Negócio:
 **RN02.01:** A tela principal deve exibir a seção "Top 10 Podcasts" com miniaturas e títulos para cada podcast.
 **RN02.02:** A seção "Categories" deve exibir categorias visíveis e um botão "See All".
 **RN02.03:** A seção "Recommended" deve exibir miniaturas de podcasts e um botão "See All".
@@ -90,7 +90,7 @@ Como um usuário, **eu quero** poder explorar e navegar facilmente pelo aplicati
 **RN02.05:** A barra de navegação inferior deve conter os ícones "Home", "Microfone" e "Pesquisa".
 <br>
 
-##### Critérios de Aceite (Gherkin - BDD):
+#### Critérios de Aceite (Gherkin - BDD):
 <br>
 
 **Cenário: Visualização dos elementos da tela Home**
@@ -116,11 +116,11 @@ Como um usuário, **eu quero** poder explorar e navegar facilmente pelo aplicati
 
 **Descrição da Tela:** Exibe informações detalhadas sobre um podcast específico, incluindo sua capa, título, descrição e uma lista de episódios recentes.
 
-##### User Stories:
+#### User Stories:
 Como um usuário, eu quero poder visualizar os detalhes de um podcast (título, descrição, imagem de capa), uma lista de episódios recentes e também ter as opções de navegação (voltar) e interação (favoritar) para que eu possa navegar de forma simples e salvar os episódios favoritos.
 
 
-##### Regras de Negócio:
+#### Regras de Negócio:
 
 **RN03.01:** A tela deve exibir a imagem de capa e o título do podcast ("The Official Podspot Podcast").
 **RN03.02:** A descrição do podcast deve ser exibida, e se for longa, deve haver a opção "see more".
@@ -131,7 +131,7 @@ Como um usuário, eu quero poder visualizar os detalhes de um podcast (título, 
 **RN03.07:** Deve haver um ícone de coração no canto superior direito para favoritar o podcast.
 <br>
 
-##### Critérios de Aceite (Gherkin - BDD):
+#### Critérios de Aceite (Gherkin - BDD):
 <br>
 
 **Cenário: Visualização dos detalhes do podcast**
@@ -164,10 +164,10 @@ Como um usuário, eu quero poder visualizar os detalhes de um podcast (título, 
 
 **Descrição da Tela:** Exibe uma lista de todos os episódios de um podcast, com informações detalhadas e opções de reprodução.
 
-##### User Stories:
+#### User Stories:
 Como um usuário, eu quero poder visualizar uma lista completa de episódios de um podcast, com detalhes como título, descrição, duração e data de lançamento, ter a opção de reproduzir, identificar episódios já escutados e ter opções de navegação (voltar) e filtragem/ordenação para que eu possa navegar de forma simples.
 
-##### Regras de Negócio:
+#### Regras de Negócio:
 **RN04.01:** A tela deve exibir o título "Episodes".
 **RN04.02:** Cada item de episódio na lista deve exibir: título, descrição breve, data de lançamento e duração.
 **RN04.03:** Cada episódio deve ter um ícone de "play" visível e clicável para iniciar a reprodução.
@@ -176,7 +176,7 @@ Como um usuário, eu quero poder visualizar uma lista completa de episódios de 
 **RN04.06:** Deve haver um ícone de filtro/ordenar no canto superior direito.
 
 
-##### Critérios de Aceite (Gherkin - BDD):
+#### Critérios de Aceite (Gherkin - BDD):
 
 **Cenário: Visualização da lista de episódios**
 **Dado** que eu naveguei para a tela de lista de episódios.
@@ -207,10 +207,10 @@ Como um usuário, eu quero poder visualizar uma lista completa de episódios de 
 
 **Descrição da Tela:** Exibe a interface para a reprodução de um episódio de podcast, incluindo controles de áudio e barra de progresso.
 
-##### User Stories:
+#### User Stories:
 Como um usuário, eu quero poder visualizar o título do episódio e o podcast ao qual ele pertence, controlar a reprodução do áudio (play, pause, pular para frente/trás), ver o progresso da reprodução, ter a opção de retornar à tela anterior e ter mais opções para que eu possa acessar outros comandos.
 
-##### Regras de Negócio:
+#### Regras de Negócio:
 **RN05.01:** A tela deve exibir o título do episódio ("Episode 102").
 **RN05.02:** O nome do podcast ("The Official Podspot Podcast") deve ser exibido abaixo do título do episódio.
 **RN05.03:** Deve haver uma barra de progresso do áudio indicando o tempo decorrido (ex: "0:00") e o tempo total (ex: "37:01").
@@ -219,7 +219,7 @@ Como um usuário, eu quero poder visualizar o título do episódio e o podcast a
 **RN05.06:** Deve haver um ícone de três pontos no canto superior direito para "mais opções".
 <br>
 
-##### Critérios de Aceite (Gherkin - BDD):
+#### Critérios de Aceite (Gherkin - BDD):
 
 **Cenário: Visualização da tela de reprodução**
 **Dado** que eu iniciei a reprodução de um episódio.
