@@ -31,7 +31,7 @@ O escopo inicial do projeto **PodSpot**, conforme as telas analisadas, abrange a
 
 
 
-### Requisitos Detalhados 
+### Requisitos Funcionais 
 Os requisitos estão organizados por tela do aplicativo, as **User Stories**, as **Regras de Negócio** e os **Critérios de Aceite**.
 Para os Critérios de Aceite, utilizamos a linguagem Gherkin (BDD).
 <br>
@@ -255,3 +255,36 @@ Como um usuário, eu quero poder visualizar o título do episódio e o podcast a
 **Dado** que estou na tela de reprodução do episódio.
 **Quando** eu clico no ícone de "Três pontos" (mais opções)
 **Então** exibirá um drawer vertical com mais opções de comando para acessar.
+<br>
+
+### Requisitos Não Funcionais 
+
+Descrevem como o sistema deve se comportar, abrangendo aspectos como desempenho, usabilidade, segurança e confiabilidade. Apesar de as telas fornecidas focarem nas funcionalidades, podemos inferir os seguintes requisitos não funcionais essenciais para o sucesso do aplicativo "Podspot":
+
+**Desempenho (Performance Efficiency)**
+**NFR01:** O aplicativo deve carregar a tela inicial em no máximo 3 segundos em redes 4G/Wi-Fi.
+**NFR02:** A transição entre as telas (Home, Detalhes do Podcast, Lista de Episódios, Reprodução) deve ser fluida e ocorrer em no máximo 1 segundo.
+**NFR03:** A reprodução de um episódio deve iniciar em no máximo 2 segundos após o clique no botão "Play", considerando uma conexão de internet estável.
+**NFR04:** A barra de progresso da reprodução deve ser atualizada em tempo real, sem atrasos perceptíveis.
+
+**Usabilidade (Usability)**
+**NFR05:** A interface do usuário deve ser intuitiva e de fácil navegação, permitindo que um usuário encontre e reproduza um podcast em no máximo 3 cliques a partir da tela principal.
+**NFR06:** Os ícones e textos devem ser claros e legíveis em diferentes tamanhos de tela e orientações (retrato/paisagem).
+**NFR07:** O feedback visual para ações do usuário (ex: clique em botões, carregamento de conteúdo) deve ser imediato e claro.
+**NFR08:** O aplicativo deve ser responsivo a toques, sem atrasos na resposta da interface.
+
+**Confiabilidade (Reliability)**
+**NFR09:** O aplicativo deve ser estável e não apresentar crashes inesperados durante o uso contínuo.
+**NFR10:** A reprodução de áudio deve ser contínua e sem interrupções inesperadas, a menos que a conexão com a internet seja perdida.
+**NFR11:** O progresso do episódio deve ser salvo automaticamente, permitindo que o usuário retome a reprodução de onde parou.
+
+**Segurança (Security)**
+**NFR12:** Caso haja funcionalidades de login/cadastro (inferido pelo ícone de perfil), os dados do usuário devem ser protegidos com criptografia adequada (ex: HTTPS para comunicação, criptografia para dados armazenados).
+**NFR13:** O aplicativo deve proteger contra acessos não autorizados a informações ou funcionalidades restritas do usuário.
+
+**Compatibilidade (Compatibility)**
+**NFR14:** O aplicativo deve ser compatível com as versões mais recentes dos sistemas operacionais móveis (iOS e Android) e suas duas versões anteriores.
+**NFR15:** O aplicativo deve funcionar corretamente em diferentes tamanhos e resoluções de tela de dispositivos móveis.
+
+**Manutenibilidade (Maintainability)**
+**NFR16:** O código-fonte do aplicativo deve seguir padrões de codificação e ser bem documentado para facilitar futuras manutenções e evoluções. (Este é um requisito mais interno, mas crucial para a longevidade do produto).
