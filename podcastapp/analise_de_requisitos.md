@@ -36,19 +36,19 @@ Os requisitos estão organizados por tela do aplicativo, as **User Stories**, as
 Para os Critérios de Aceite, utilizamos a linguagem Gherkin (BDD).
 <br>
 
-#### Tela 01: Tela Inicial (Onboarding)
+### Tela 01: Tela Inicial (Onboarding)
 <br>
 
 ![Referência  Protótipo](/img/tela_de_onbording.png)
 
 
-#### Descrição da Tela:
+### Descrição da Tela:
  É a primeira tela que o usuário vê ao abrir o aplicativo, com o logotipo do PodSpot, uma breve descrição e um botão para iniciar.
 
-#### User Stories: 
+### User Stories: 
 Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descrição do aplicativo para entender sua proposta.
 
-#### Regras de Negócio:
+### Regras de Negócio:
 **RN01.01:** A tela inicial deve conter o nome do aplicativo "PodSpot".
 
 **RN01.02:** Deve haver uma frase descritiva: "Listen to all of your favorite podcasts in one spot.".
@@ -56,39 +56,46 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 **RN01.03:** Deve haver um botão de ação com o texto "Get Started".
 <br>
 
-#### Critérios de Aceite (Gherkin - BDD):
+### Critérios de Aceite (Gherkin - BDD):
 <br>
 
 #### Cenário: Visualização da tela inicial
 
-**Dado** que o aplicativo PodSpot é aberto pela primeira vez
+**Dado** que o aplicativo PodSpot é aberto pela primeira vez 
+
 **Quando** a tela inicial é carregada
+
 **Então** o título "PodSpot" deve ser exibido na tela
+
 **E** a descrição "Listen to all of your favorite podcasts in one spot." deve ser exibida
+
 **E** o botão "Get Started" deve ser exibido e estar clicável.
 <br>
 
 #### Cenário: Navegação a partir do botão "Get Started"
 
 **Dado** que estou na tela inicial do aplicativo PodSpot.
+
 **Quando** eu toco no botão "Get Started".
+
 **Então** serei direcionado para a tela principal (home) do aplicativo.
 <br>
 
-#### Tela 02: Tela Principal (Home): 
+### Tela 02: Tela Principal (Home): 
 
 ![Referência  Protótipo](/img/tela_home%20.png)
 
-**Descrição da Tela:** Exibe um conteúdo diversificado como "Top 10 Podcasts", "Categories" e "Recommended", além de uma barra de navegação inferior.
+### Descrição da Tela:
+Exibe um conteúdo diversificado como "Top 10 Podcasts", "Categories" e "Recommended", além de uma barra de navegação inferior.
 
-#### User Stories:
+### User Stories:
 
 **US02.01:** "Como um usuário, eu quero poder explorar diferentes conteúdos (Top 10 Podcasts, Categorias, Recomendações) na tela principal para descobrir novos podcasts."
 
 **US02.02:** "Como um usuário, eu quero acessar rapidamente as principais seções do aplicativo (Home, Microfone, Pesquisa, Perfil) através da barra de navegação para otimizar minha experiência."
 
 
-#### Regras de Negócio:
+### Regras de Negócio:
 **RN02.01:** A tela principal deve exibir a seção "Top 10 Podcasts" com miniaturas e títulos para cada podcast.
 
 **RN02.02:** A seção "Categories" deve exibir categorias visíveis e um botão "See All".
@@ -100,35 +107,44 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 **RN02.05:** A barra de navegação inferior deve conter os ícones "Home", "Microfone" e "Pesquisa".
 <br>
 
-#### Critérios de Aceite (Gherkin - BDD):
+### Critérios de Aceite (Gherkin - BDD):
 <br>
 
 #### Cenário: Visualização dos elementos da tela Home
 
 **Dado** que estou na tela principal do aplicativo PodSpot.
+
 **Quando** a tela é carregada.
+
 **Então** a seção "Top 10 Podcasts" deve ser visível com pelo menos 3 podcasts exibidos.
+
 **E** a seção "Categories" deve ser visível com pelo menos 4 categorias e o botão "See All".
+
 **E** a seção "Recommended" deve ser visível com pelo menos 3 podcasts e o botão "See All".
+
 **E** o ícone de perfil deve ser exibido no canto superior direito.
+
 **E** a barra de navegação inferior com os ícones "Home", "Microfone" e "Pesquisa" deve ser exibida e funcional.
 <br>
 
 #### Cenário: Navegação para a tela de detalhes do Podcast
 
 **Dado** que estou na tela principal do aplicativo PodSpot
+
 **Quando** eu toco em um dos podcasts da seção "Top 10 Podcasts" (ex: "The Official PodSpot Podcast").
+
 **Então** serei direcionado para a tela de detalhes do podcast selecionado.
 
 
-#### Tela 03: Tela de Detalhes do Podcast
+### Tela 03: Tela de Detalhes do Podcast
 
 ![Referência  Protótipo](/img/tela_detalhes-do_podacst.png)
 
 
-**Descrição da Tela:** Exibe informações detalhadas sobre um podcast específico, incluindo sua capa, título, descrição e uma lista de episódios recentes.
+### Descrição da Tela:
+Exibe informações detalhadas sobre um podcast específico, incluindo sua capa, título, descrição e uma lista de episódios recentes.
 
-#### User Stories:
+### User Stories:
 **US03.01:** "Como um usuário, eu quero visualizar informações detalhadas de um podcast (título, descrição, imagem de capa) para entender sobre o conteúdo."
 
 **US03.02:** "Como um usuário, eu quero ver uma lista dos episódios recentes de um podcast para escolher qual ouvir."
@@ -136,7 +152,7 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 **US03.03:** "Como um usuário, eu quero ter opções de navegação (voltar) e interação (favoritar podcast) na tela de detalhes para gerenciar minha experiência."
 
 
-#### Regras de Negócio:
+### Regras de Negócio:
 
 **RN03.01:** A tela deve exibir a imagem de capa e o título do podcast ("The Official PodSpot Podcast").
 
@@ -153,25 +169,34 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 **RN03.07:** Deve haver um ícone de coração no canto superior direito para favoritar o podcast.
 <br>
 
-#### Critérios de Aceite (Gherkin - BDD):
+### Critérios de Aceite (Gherkin - BDD):
 <br>
 
 #### Cenário: Visualização dos detalhes do podcast
 
 **Dado** que eu naveguei para a tela de detalhes de um podcast.
+
 **Quando** a tela é carregada.
+
 **Então** a imagem de capa e o título do podcast devem ser exibidos.
+
 **E** a descrição do podcast deve ser visível, com a opção "see more" se o texto ultrapassar 3 linhas.
+
 **E** a classificação "TOP 10 PODCAST" deve ser exibida.
+
 **E** a seção "Recent Episodes" deve ser visível com o título do episódio e sua duração.
+
 **E** o ícone de "voltar" deve ser exibido e estar clicável.
+
 **E** o ícone de coração para favoritar deve ser exibido e estar clicável.
 <br>
 
  #### Cenário: Navegação para a lista completa de episódios
 
 **Dado** que estou na tela de detalhes do podcast.
+
 **Quando** eu toco na área do primeiro episódio recente ("Episode 102").
+
 **Então** serei direcionado para a tela de lista de episódios.
 <br>
 
@@ -182,14 +207,15 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 **Então** serei direcionado de volta para a tela principal (home).
 <br>
 
-#### Tela 04: Tela de Lista de Episódios
+### Tela 04: Tela de Lista de Episódios
 
 ![Referência  Protótipo](/img/tela_epsodios_recentes.png)
 
 
-**Descrição da Tela:** Exibe uma lista de todos os episódios de um podcast, com informações detalhadas e opções de reprodução.
+### Descrição da Tela:
+Exibe uma lista de todos os episódios de um podcast, com informações detalhadas e opções de reprodução.
 
-#### User Stories:
+### User Stories:
 **US04.01:** "Como um usuário, eu quero visualizar uma lista completa dos episódios de um podcast, incluindo título, descrição, duração e data de lançamento, para ter todas as informações relevantes."
 
 **US04.02:** "Como um usuário, eu quero iniciar a reprodução de um episódio diretamente da lista para começar a ouvir rapidamente."
@@ -198,57 +224,74 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 
 **US04.04:** "Como um usuário, eu quero ter opções de navegação (voltar) e filtragem/ordenação na lista de episódios para organizar e encontrar o que desejo."
 
-#### Regras de Negócio:
+### Regras de Negócio:
 **RN04.01:** A tela deve exibir o título "Episodes".
+
 **RN04.02:** Cada item de episódio na lista deve exibir: título, descrição breve, data de lançamento e duração.
+
 **RN04.03:** Cada episódio deve ter um ícone de "play" visível e clicável para iniciar a reprodução.
+
 **RN04.04:** Episódios que já foram escutados devem exibir um ícone de checkmark.
+
 **RN04.05:** Deve haver um ícone de "voltar" (seta para a esquerda) no canto superior esquerdo.
+
 **RN04.06:** Deve haver um ícone de filtro/ordenar no canto superior direito.
 
 
-#### Critérios de Aceite (Gherkin - BDD):
+### Critérios de Aceite (Gherkin - BDD):
 
 #### Cenário: Visualização da lista de episódios
 
 **Dado** que eu naveguei para a tela de lista de episódios.
+
 **Quando** a tela é carregada.
+
 **Então** o título "Episodes" deve ser exibido.
+
 **E** uma lista de episódios deve ser exibida, cada um com título, descrição, data e duração.
+
 **E** para cada episódio, o ícone de "play" deve ser visível.
+
 **E** episódios como "Episode 102" e "Episode 100" devem exibir o ícone de checkmark.
+
 **E** o ícone de "voltar" deve ser exibido e estar clicável.
+
 **E** o ícone de filtro/ordenar deve ser exibido e estar clicável.
 <br>
 
 #### Cenário: Reprodução de um episódio a partir da lista
 
 **Dado** que estou na tela de lista de episódios
+
 **Quando** eu toco no ícone de "play" de um episódio (ex: "Episode 102").
+
 **Então** serei direcionado para a tela de reprodução do episódio.
 <br>
 
 #### Cenário: Voltar para a tela anterior
 
 **Dado** que estou na tela de lista de episódios.
+
 **Quando** eu toco no ícone de "voltar" (seta para a esquerda).
+
 **Então** serei direcionado de volta para a tela de detalhes do podcast.
 <br>
 
-#### Tela 05: Tela de Reprodução do Episódio
+### Tela 05: Tela de Reprodução do Episódio
 
 ![Referência  Protótipo](/img/tela_de_reproducao.png)
 
-**Descrição da Tela:** Exibe a interface para a reprodução de um episódio de podcast, incluindo controles de áudio e barra de progresso.
+### Descrição da Tela:
+Exibe a interface para a reprodução de um episódio de podcast, incluindo controles de áudio e barra de progresso.
 
-#### User Stories:
+### User Stories:
 **US05.01:** "Como um usuário, eu quero visualizar o título e o nome do podcast na tela de reprodução para saber o que estou ouvindo."
 
 **US05.02:** "Como um usuário, eu quero controlar a reprodução de áudio (play, pause, pular para frente/trás) e ver o progresso para ter controle total sobre a experiência de audição."
 
 **US05.03:** "Como um usuário, eu quero ter opções de navegação (voltar) e acesso a 'mais opções' na tela de reprodução para gerenciar o episódio."
 
-#### Regras de Negócio:
+### Regras de Negócio:
 **RN05.01:** A tela deve exibir o título do episódio ("Episode 102").
 
 **RN05.02:** O nome do podcast ("The Official PodSpot Podcast") deve ser exibido abaixo do título do episódio.
@@ -262,46 +305,62 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 **RN05.06:** Deve haver um ícone de três pontos no canto superior direito para "mais opções".
 <br>
 
-#### Critérios de Aceite (Gherkin - BDD):
+### Critérios de Aceite (Gherkin - BDD):
 
 #### Cenário: Visualização da tela de reprodução
 
 **Dado** que eu iniciei a reprodução de um episódio.
+
 **Quando** a tela de reprodução é carregada.
+
 *Então* o título do episódio e o nome do podcast devem ser exibidos.
+
 **E** a barra de progresso do áudio deve ser visível, mostrando o tempo decorrido e o tempo total do episódio.
+
 **E** os botões "voltar", "play/pause" e "avançar" devem ser exibidos e estar clicáveis.
+
 **E** o ícone de "voltar" deve ser exibido e estar clicável.
+
 **E** o ícone de três pontos (mais opções) deve ser exibido e estar clicável.
 <br>
 
 #### Cenário: Controle de reprodução - Pausar
 
 **Dado** que um episódio está sendo reproduzido na tela de reprodução.
+
 **Quando** eu clico no botão de "play/pause".
+
 **Então** a reprodução deve pausar.
+
 **E** o ícone do botão deve mudar para "play".
 <br>
 
 #### Cenário: Controle de reprodução - Iniciar
 
 **Dado** que um episódio está pausado na tela de reprodução.
+
 **Quando** eu toco no botão de "play/pause".
+
 **Então** a reprodução deve reiniciar.
+
 **E** o ícone do botão deve mudar para "pause".
 <br>
 
 #### Cenário: Voltar para a tela anterior
 
 **Dado** que estou na tela de reprodução do episódio.
+
 **Quando** eu toco no ícone de "voltar" (seta para a esquerda).
+
 **Então** serei direcionado de volta para a tela de lista de episódios.
 <br>
 
 #### Cenário: Mais opções de comando
 
 **Dado** que estou na tela de reprodução do episódio.
-**Quando** eu clico no ícone de "Três pontos" (mais opções)
+
+**Quando** eu clico no ícone de "Três pontos" (mais opções).
+
 **Então** exibirá um drawer vertical com mais opções de comando para acessar.
 <br>
 
