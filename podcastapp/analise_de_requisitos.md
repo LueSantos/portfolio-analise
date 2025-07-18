@@ -59,25 +59,19 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 #### Critérios de Aceite (Gherkin - BDD):
 <br>
 
-**Cenário: Visualização da tela inicial**
+#### Cenário: Visualização da tela inicial
 
 **Dado** que o aplicativo PodSpot é aberto pela primeira vez
-
 **Quando** a tela inicial é carregada
-
 **Então** o título "PodSpot" deve ser exibido na tela
-
 **E** a descrição "Listen to all of your favorite podcasts in one spot." deve ser exibida
-
 **E** o botão "Get Started" deve ser exibido e estar clicável.
 <br>
 
-**Cenário: Navegação a partir do botão "Get Started"**
+#### Cenário: Navegação a partir do botão "Get Started"
 
 **Dado** que estou na tela inicial do aplicativo PodSpot.
-
 **Quando** eu toco no botão "Get Started".
-
 **Então** serei direcionado para a tela principal (home) do aplicativo.
 <br>
 
@@ -92,8 +86,6 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 **US02.01:** "Como um usuário, eu quero poder explorar diferentes conteúdos (Top 10 Podcasts, Categorias, Recomendações) na tela principal para descobrir novos podcasts."
 
 **US02.02:** "Como um usuário, eu quero acessar rapidamente as principais seções do aplicativo (Home, Microfone, Pesquisa, Perfil) através da barra de navegação para otimizar minha experiência."
-
-
 
 
 #### Regras de Negócio:
@@ -111,29 +103,21 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 #### Critérios de Aceite (Gherkin - BDD):
 <br>
 
-**Cenário: Visualização dos elementos da tela Home**
+#### Cenário: Visualização dos elementos da tela Home
 
 **Dado** que estou na tela principal do aplicativo PodSpot.
-
 **Quando** a tela é carregada.
-
 **Então** a seção "Top 10 Podcasts" deve ser visível com pelo menos 3 podcasts exibidos.
-
 **E** a seção "Categories" deve ser visível com pelo menos 4 categorias e o botão "See All".
-
 **E** a seção "Recommended" deve ser visível com pelo menos 3 podcasts e o botão "See All".
-
 **E** o ícone de perfil deve ser exibido no canto superior direito.
-
 **E** a barra de navegação inferior com os ícones "Home", "Microfone" e "Pesquisa" deve ser exibida e funcional.
 <br>
 
-**Cenário: Navegação para a tela de detalhes do Podcast**
+#### Cenário: Navegação para a tela de detalhes do Podcast
 
-**Dado** que estou na tela principal do aplicativo PodSpot.
-
+**Dado** que estou na tela principal do aplicativo PodSpot
 **Quando** eu toco em um dos podcasts da seção "Top 10 Podcasts" (ex: "The Official PodSpot Podcast").
-
 **Então** serei direcionado para a tela de detalhes do podcast selecionado.
 
 
@@ -172,40 +156,29 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 #### Critérios de Aceite (Gherkin - BDD):
 <br>
 
-**Cenário: Visualização dos detalhes do podcast**
+#### Cenário: Visualização dos detalhes do podcast
 
 **Dado** que eu naveguei para a tela de detalhes de um podcast.
-
 **Quando** a tela é carregada.
-
 **Então** a imagem de capa e o título do podcast devem ser exibidos.
-
 **E** a descrição do podcast deve ser visível, com a opção "see more" se o texto ultrapassar 3 linhas.
-
 **E** a classificação "TOP 10 PODCAST" deve ser exibida.
-
 **E** a seção "Recent Episodes" deve ser visível com o título do episódio e sua duração.
-
 **E** o ícone de "voltar" deve ser exibido e estar clicável.
-
 **E** o ícone de coração para favoritar deve ser exibido e estar clicável.
 <br>
 
-**Cenário: Navegação para a lista completa de episódios**
+ #### Cenário: Navegação para a lista completa de episódios
 
 **Dado** que estou na tela de detalhes do podcast.
-
 **Quando** eu toco na área do primeiro episódio recente ("Episode 102").
-
 **Então** serei direcionado para a tela de lista de episódios.
 <br>
 
-**Cenário: Voltar para a tela anterior**
+#### Cenário: Voltar para a tela anterior
 
 **Dado** que estou na tela de detalhes do podcast.
-
 **Quando** eu toco no ícone de "voltar" (seta para a esquerda).
-
 **Então** serei direcionado de volta para a tela principal (home).
 <br>
 
@@ -236,40 +209,29 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 
 #### Critérios de Aceite (Gherkin - BDD):
 
-**Cenário: Visualização da lista de episódios**
+#### Cenário: Visualização da lista de episódios
 
 **Dado** que eu naveguei para a tela de lista de episódios.
-
 **Quando** a tela é carregada.
-
 **Então** o título "Episodes" deve ser exibido.
-
 **E** uma lista de episódios deve ser exibida, cada um com título, descrição, data e duração.
-
 **E** para cada episódio, o ícone de "play" deve ser visível.
-
 **E** episódios como "Episode 102" e "Episode 100" devem exibir o ícone de checkmark.
-
 **E** o ícone de "voltar" deve ser exibido e estar clicável.
-
 **E** o ícone de filtro/ordenar deve ser exibido e estar clicável.
 <br>
 
-**Cenário: Reprodução de um episódio a partir da lista**
+#### Cenário: Reprodução de um episódio a partir da lista
 
-**Dado** que estou na tela de lista de episódios.
-
+**Dado** que estou na tela de lista de episódios
 **Quando** eu toco no ícone de "play" de um episódio (ex: "Episode 102").
-
 **Então** serei direcionado para a tela de reprodução do episódio.
 <br>
 
-**Cenário: Voltar para a tela anterior**
+#### Cenário: Voltar para a tela anterior
 
 **Dado** que estou na tela de lista de episódios.
-
 **Quando** eu toco no ícone de "voltar" (seta para a esquerda).
-
 **Então** serei direcionado de volta para a tela de detalhes do podcast.
 <br>
 
@@ -302,60 +264,44 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 
 #### Critérios de Aceite (Gherkin - BDD):
 
-**Cenário: Visualização da tela de reprodução**
+#### Cenário: Visualização da tela de reprodução
 
 **Dado** que eu iniciei a reprodução de um episódio.
-
 **Quando** a tela de reprodução é carregada.
-
 *Então* o título do episódio e o nome do podcast devem ser exibidos.
-
 **E** a barra de progresso do áudio deve ser visível, mostrando o tempo decorrido e o tempo total do episódio.
-
 **E** os botões "voltar", "play/pause" e "avançar" devem ser exibidos e estar clicáveis.
-
 **E** o ícone de "voltar" deve ser exibido e estar clicável.
-
 **E** o ícone de três pontos (mais opções) deve ser exibido e estar clicável.
 <br>
 
-**Cenário: Controle de reprodução - Pausar**
+#### Cenário: Controle de reprodução - Pausar
 
 **Dado** que um episódio está sendo reproduzido na tela de reprodução.
-
 **Quando** eu clico no botão de "play/pause".
-
 **Então** a reprodução deve pausar.
-
 **E** o ícone do botão deve mudar para "play".
 <br>
 
-**Cenário: Controle de reprodução - Iniciar**
+#### Cenário: Controle de reprodução - Iniciar
 
 **Dado** que um episódio está pausado na tela de reprodução.
-
 **Quando** eu toco no botão de "play/pause".
-
 **Então** a reprodução deve reiniciar.
-
 **E** o ícone do botão deve mudar para "pause".
 <br>
 
-**Cenário: Voltar para a tela anterior**
+#### Cenário: Voltar para a tela anterior
 
 **Dado** que estou na tela de reprodução do episódio.
-
 **Quando** eu toco no ícone de "voltar" (seta para a esquerda).
-
 **Então** serei direcionado de volta para a tela de lista de episódios.
 <br>
 
-**Cenário: Mais opções de comando**
+#### Cenário: Mais opções de comando
 
 **Dado** que estou na tela de reprodução do episódio.
-
 **Quando** eu clico no ícone de "Três pontos" (mais opções)
-
 **Então** exibirá um drawer vertical com mais opções de comando para acessar.
 <br>
 
@@ -388,54 +334,54 @@ Explica de onde o requisito foi derivado ou por que ele existe.
 
 **NFR01:** O aplicativo deve carregar a tela inicial em no máximo 3 segundos em redes 4G/Wi-Fi.
 
->>**Prioridade: Alta** (Carga inicial impacta diretamente a primeira impressão e retenção do usuário, crucial para o sucesso).
+>**Prioridade: Alta** (Carga inicial impacta diretamente a primeira impressão e retenção do usuário, crucial para o sucesso).
 
->>**Origem: Boa Prática de Mercado** (Expectativa de usuários por aplicativos rápidos), **Inferido do Protótipo** (Aplicativos modernos devem ser rápidos).
+>**Origem: Boa Prática de Mercado** (Expectativa de usuários por aplicativos rápidos), **Inferido do Protótipo** (Aplicativos modernos devem ser rápidos).
 
 **NFR02:** "A transição entre as telas (Home, Detalhes do Podcast, Lista de Episódios, Reprodução) deve ser fluida e ocorrer em no máximo 1 segundo."
 
->>**Prioridade: Alta** (Fluidez na navegação é essencial para a usabilidade e experiência do usuário).
+>**Prioridade: Alta** (Fluidez na navegação é essencial para a usabilidade e experiência do usuário).
 
->>**Origem: Boa Prática de Mercado** (Padrão de experiência de usuário para apps mobile).
+>**Origem: Boa Prática de Mercado** (Padrão de experiência de usuário para apps mobile).
 
 **NFR03:** "A reprodução de um episódio deve iniciar em no máximo 2 segundos após o clique no botão 'Play', considerando uma conexão de internet estável."
 
->>**Prioridade: Alta** (Impacta diretamente a função principal do aplicativo: ouvir podcasts. Atrasos aqui causariam frustração imediata).
+>**Prioridade: Alta** (Impacta diretamente a função principal do aplicativo: ouvir podcasts. Atrasos aqui causariam frustração imediata).
 
->>**Origem: Inferido do Protótipo** (Função central da reprodução), **Boa Prática de Mercado.**
+>**Origem: Inferido do Protótipo** (Função central da reprodução), **Boa Prática de Mercado.**
 
 **NFR04:** "A barra de progresso da reprodução deve ser atualizada em tempo real, sem atrasos perceptíveis."
 
->>**Prioridade: Média** (Um leve atraso não impede o uso, mas afeta a usabilidade).
+>**Prioridade: Média** (Um leve atraso não impede o uso, mas afeta a usabilidade).
 
->>**Origem: Inferido do Protótipo** (Representação visual da progressão), **Boa Prática de Mercado.**
+>**Origem: Inferido do Protótipo** (Representação visual da progressão), **Boa Prática de Mercado.**
 <br>
 
 #### **Usabilidade (Usability)**
 
 **NFR05:** "A interface do usuário deve ser intuitiva e de fácil navegação, permitindo que um usuário encontre e reproduza um podcast em no máximo 3 cliques a partir da tela principal."
 
->>**Prioridade: Alta** (Diretamente ligada à satisfação do usuário e ao objetivo de "facilitar a descoberta").
+>**Prioridade: Alta** (Diretamente ligada à satisfação do usuário e ao objetivo de "facilitar a descoberta").
 
->>**Origem: Inferido do Protótipo** (Layout visa facilidade), **Requisito de Negócio** (Facilidade de uso é um diferencial competitivo), **Boa Prática de Mercado.**
+>**Origem: Inferido do Protótipo** (Layout visa facilidade), **Requisito de Negócio** (Facilidade de uso é um diferencial competitivo), **Boa Prática de Mercado.**
 
 **NFR06:** "Os ícones e textos devem ser claros e legíveis em diferentes tamanhos de tela e orientações (retrato/paisagem)."
 
->>**Prioridade: Alta** (Essencial para acessibilidade e uso em diversos dispositivos).
+>**Prioridade: Alta** (Essencial para acessibilidade e uso em diversos dispositivos).
 
->>**Origem: Boa Prática de Mercado** (Design responsivo), Norma (Padrões de acessibilidade inferidos).
+>**Origem: Boa Prática de Mercado** (Design responsivo), Norma (Padrões de acessibilidade inferidos).
 
 **NFR07:** "O feedback visual para ações do usuário (ex: clique em botões, carregamento de conteúdo) deve ser imediato e claro."
 
->>**Prioridade: Média** (Impacta a percepção de responsividade e evita que o usuário clique múltiplas vezes).
+>**Prioridade: Média** (Impacta a percepção de responsividade e evita que o usuário clique múltiplas vezes).
 
->>**Origem: Boa Prática de Mercado** (Design de UX/UI).
+>**Origem: Boa Prática de Mercado** (Design de UX/UI).
 
 **NFR08:** "O aplicativo deve ser responsivo a toques, sem atrasos na resposta da interface."
 
->>**Prioridade: Alta** (A falta de resposta a toques torna o aplicativo inutilizável).
+>**Prioridade: Alta** (A falta de resposta a toques torna o aplicativo inutilizável).
 
->>**Origem: Boa Prática de Mercado** (Expectativa básica de aplicativos móveis).
+>**Origem: Boa Prática de Mercado** (Expectativa básica de aplicativos móveis).
 
 
 
@@ -443,36 +389,36 @@ Explica de onde o requisito foi derivado ou por que ele existe.
 
 **NFR09:** "O aplicativo deve ser estável e não apresentar crashes inesperados durante o uso contínuo (ex: após 4 horas de reprodução ininterrupta)."
 
->>**Prioridade: Altíssima** (Crashes destroem a experiência do usuário e a reputação do aplicativo).
+>**Prioridade: Altíssima** (Crashes destroem a experiência do usuário e a reputação do aplicativo).
 
->>**Origem: Requisito de Negócio** (Qualidade fundamental do produto), Boa Prática de Mercado.
+>**Origem: Requisito de Negócio** (Qualidade fundamental do produto), Boa Prática de Mercado.
 
 
 **NFR10:** "A reprodução de áudio deve ser contínua e sem interrupções inesperadas, a menos que a conexão com a internet seja perdida."
 
->>**Prioridade: Alta** (Diretamente relacionada à função principal e à satisfação do usuário).
+>**Prioridade: Alta** (Diretamente relacionada à função principal e à satisfação do usuário).
 
->>**Origem: Requisito de Negócio, Boa Prática de Mercado.**
+>**Origem: Requisito de Negócio, Boa Prática de Mercado.**
 
 **NFR11:** "O progresso do episódio deve ser salvo automaticamente, permitindo que o usuário retome a reprodução de onde parou."
 
->>**Prioridade: Média** (Importante para a conveniência do usuário, mas não impede a funcionalidade principal).
+>**Prioridade: Média** (Importante para a conveniência do usuário, mas não impede a funcionalidade principal).
 
->>**Origem: Boa Prática de Mercado** (Recurso comum em players de áudio/vídeo).
+>**Origem: Boa Prática de Mercado** (Recurso comum em players de áudio/vídeo).
 
 #### **Segurança (Security)**
 
 **NFR12:** "Caso haja funcionalidades de login/cadastro (inferido pelo ícone de perfil), os dados do usuário devem ser protegidos com criptografia adequada (ex: HTTPS para comunicação, criptografia para dados armazenados)."
 
->>**Prioridade: Altíssima** (Questões de privacidade e conformidade legal).
+>**Prioridade: Altíssima** (Questões de privacidade e conformidade legal).
 
->>**Origem: Inferido do Protótipo** (Presença de perfil), Norma (GDPR, LGPD ou outras regulamentações de dados), Boa Prática de Mercado.
+>**Origem: Inferido do Protótipo** (Presença de perfil), Norma (GDPR, LGPD ou outras regulamentações de dados), Boa Prática de Mercado.
 
 **NFR13:** "O aplicativo deve proteger contra acessos não autorizados a informações ou funcionalidades restritas do usuário."
 
->>**Prioridade: Altíssima** (Prevenção de fraudes e acesso indevido a dados).
+>**Prioridade: Altíssima** (Prevenção de fraudes e acesso indevido a dados).
 
->>**Origem: Requisito de Negócio, Boa Prática de Mercado.**
+>**Origem: Requisito de Negócio, Boa Prática de Mercado.**
 
 #### **Compatibilidade (Compatibility)**
 
@@ -484,6 +430,6 @@ Explica de onde o requisito foi derivado ou por que ele existe.
 
 **NFR16:** O código-fonte do aplicativo deve seguir padrões de codificação e ser bem documentado para facilitar futuras manutenções e evoluções. (Este é um requisito mais interno, mas crucial para a longevidade do produto).
 
->>**Prioridade: Média** (Impacta o custo e a velocidade de desenvolvimento a longo prazo).
+>**Prioridade: Média** (Impacta o custo e a velocidade de desenvolvimento a longo prazo).
 
->>**Origem: Boa Prática de Mercado** (Engenharia de Software), Requisito de Negócio (Redução de custos futuros).
+>**Origem: Boa Prática de Mercado** (Engenharia de Software), Requisito de Negócio (Redução de custos futuros).
