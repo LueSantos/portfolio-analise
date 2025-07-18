@@ -50,7 +50,9 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 
 #### Regras de Negócio:
 **RN01.01:** A tela inicial deve conter o nome do aplicativo "PodSpot".
+
 **RN01.02:** Deve haver uma frase descritiva: "Listen to all of your favorite podcasts in one spot.".
+
 **RN01.03:** Deve haver um botão de ação com o texto "Get Started".
 <br>
 
@@ -58,6 +60,7 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 <br>
 
 **Cenário: Visualização da tela inicial**
+
 **Dado** que o aplicativo PodSpot é aberto pela primeira vez
 **Quando** a tela inicial é carregada
 **Então** o título "PodSpot" deve ser exibido na tela
@@ -66,6 +69,7 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 <br>
 
 **Cenário: Navegação a partir do botão "Get Started"**
+
 **Dado** que estou na tela inicial do aplicativo PodSpot.
 **Quando** eu toco no botão "Get Started".
 **Então** serei direcionado para a tela principal (home) do aplicativo.
@@ -88,9 +92,13 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 
 #### Regras de Negócio:
 **RN02.01:** A tela principal deve exibir a seção "Top 10 Podcasts" com miniaturas e títulos para cada podcast.
+
 **RN02.02:** A seção "Categories" deve exibir categorias visíveis e um botão "See All".
+
 **RN02.03:** A seção "Recommended" deve exibir miniaturas de podcasts e um botão "See All".
+
 **RN02.04:** Deve haver um ícone de perfil no canto superior direito.
+
 **RN02.05:** A barra de navegação inferior deve conter os ícones "Home", "Microfone" e "Pesquisa".
 <br>
 
@@ -98,6 +106,7 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 <br>
 
 **Cenário: Visualização dos elementos da tela Home**
+
 **Dado** que estou na tela principal do aplicativo PodSpot.
 **Quando** a tela é carregada.
 **Então** a seção "Top 10 Podcasts" deve ser visível com pelo menos 3 podcasts exibidos.
@@ -108,6 +117,7 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 <br>
 
 **Cenário: Navegação para a tela de detalhes do Podcast**
+
 **Dado** que estou na tela principal do aplicativo PodSpot.
 **Quando** eu toco em um dos podcasts da seção "Top 10 Podcasts" (ex: "The Official PodSpot Podcast").
 **Então** serei direcionado para a tela de detalhes do podcast selecionado.
@@ -131,11 +141,17 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 #### Regras de Negócio:
 
 **RN03.01:** A tela deve exibir a imagem de capa e o título do podcast ("The Official PodSpot Podcast").
+
 **RN03.02:** A descrição do podcast deve ser exibida, e se for longa, deve haver a opção "see more".
+
 **RN03.03**: A classificação "TOP 10 PODCAST" deve ser visível, se aplicável.
+
 **RN03.04:** Deve haver uma seção com o título "Recent Episodes".
+
 **RN03.05:** O primeiro episódio na seção "Recent Episodes" deve exibir título e duração ("Episode 102", "37 min").
+
 **RN03.06:** Deve haver um ícone de "voltar" (seta para a esquerda) no canto superior esquerdo.
+
 **RN03.07:** Deve haver um ícone de coração no canto superior direito para favoritar o podcast.
 <br>
 
@@ -143,6 +159,7 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 <br>
 
 **Cenário: Visualização dos detalhes do podcast**
+
 **Dado** que eu naveguei para a tela de detalhes de um podcast.
 **Quando** a tela é carregada.
 **Então** a imagem de capa e o título do podcast devem ser exibidos.
@@ -154,12 +171,14 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 <br>
 
 **Cenário: Navegação para a lista completa de episódios**
+
 **Dado** que estou na tela de detalhes do podcast.
 **Quando** eu toco na área do primeiro episódio recente ("Episode 102").
 **Então** serei direcionado para a tela de lista de episódios.
 <br>
 
 **Cenário: Voltar para a tela anterior**
+
 **Dado** que estou na tela de detalhes do podcast.
 **Quando** eu toco no ícone de "voltar" (seta para a esquerda).
 **Então** serei direcionado de volta para a tela principal (home).
@@ -193,6 +212,7 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 #### Critérios de Aceite (Gherkin - BDD):
 
 **Cenário: Visualização da lista de episódios**
+
 **Dado** que eu naveguei para a tela de lista de episódios.
 **Quando** a tela é carregada.
 **Então** o título "Episodes" deve ser exibido.
@@ -204,12 +224,14 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 <br>
 
 **Cenário: Reprodução de um episódio a partir da lista**
+
 **Dado** que estou na tela de lista de episódios.
 **Quando** eu toco no ícone de "play" de um episódio (ex: "Episode 102").
 **Então** serei direcionado para a tela de reprodução do episódio.
 <br>
 
 **Cenário: Voltar para a tela anterior**
+
 **Dado** que estou na tela de lista de episódios.
 **Quando** eu toco no ícone de "voltar" (seta para a esquerda).
 **Então** serei direcionado de volta para a tela de detalhes do podcast.
@@ -230,16 +252,22 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 
 #### Regras de Negócio:
 **RN05.01:** A tela deve exibir o título do episódio ("Episode 102").
+
 **RN05.02:** O nome do podcast ("The Official PodSpot Podcast") deve ser exibido abaixo do título do episódio.
+
 **RN05.03:** Deve haver uma barra de progresso do áudio indicando o tempo decorrido (ex: "0:00") e o tempo total (ex: "37:01").
+
 **RN05.04:** A tela deve conter os botões de controle de reprodução: "voltar 10 segundos", "play/pause" e "avançar 10 segundos".
+
 **RN05.05:** Deve haver um ícone de "voltar" (seta para a esquerda) no canto superior esquerdo.
+
 **RN05.06:** Deve haver um ícone de três pontos no canto superior direito para "mais opções".
 <br>
 
 #### Critérios de Aceite (Gherkin - BDD):
 
 **Cenário: Visualização da tela de reprodução**
+
 **Dado** que eu iniciei a reprodução de um episódio.
 **Quando** a tela de reprodução é carregada.
 *Então* o título do episódio e o nome do podcast devem ser exibidos.
@@ -250,6 +278,7 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 <br>
 
 **Cenário: Controle de reprodução - Pausar**
+
 **Dado** que um episódio está sendo reproduzido na tela de reprodução.
 **Quando** eu clico no botão de "play/pause".
 **Então** a reprodução deve pausar.
@@ -257,6 +286,7 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 <br>
 
 **Cenário: Controle de reprodução - Iniciar**
+
 **Dado** que um episódio está pausado na tela de reprodução.
 **Quando** eu toco no botão de "play/pause".
 **Então** a reprodução deve reiniciar.
@@ -264,12 +294,14 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 <br>
 
 **Cenário: Voltar para a tela anterior**
+
 **Dado** que estou na tela de reprodução do episódio.
 **Quando** eu toco no ícone de "voltar" (seta para a esquerda).
 **Então** serei direcionado de volta para a tela de lista de episódios.
 <br>
 
 **Cenário: Mais opções de comando**
+
 **Dado** que estou na tela de reprodução do episódio.
 **Quando** eu clico no ícone de "Três pontos" (mais opções)
 **Então** exibirá um drawer vertical com mais opções de comando para acessar.
