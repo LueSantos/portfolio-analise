@@ -113,6 +113,7 @@ Exibe um conteúdo diversificado como "Top 10 Podcasts", "Categories" e "Recomme
 
 ### Critérios de Aceite (Gherkin - BDD):
 <br>
+
 ### Cenário: Visualização dos elementos da tela Home
 
 **Dado** que estou na tela principal do aplicativo PodSpot.
@@ -177,6 +178,7 @@ Exibe informações detalhadas sobre um podcast específico, incluindo sua capa,
 
 ### Critérios de Aceite (Gherkin - BDD):
 <br>
+
 ### Cenário: Visualização dos detalhes do podcast
 
 **Dado** que eu naveguei para a tela de detalhes de um podcast.
@@ -196,7 +198,8 @@ Exibe informações detalhadas sobre um podcast específico, incluindo sua capa,
 **E** o ícone de coração para favoritar deve ser exibido e estar clicável.
 <br>
 <br>
- ### Cenário: Navegação para a lista completa de episódios
+
+### Cenário: Navegação para a lista completa de episódios
 
 **Dado** que estou na tela de detalhes do podcast.
 
@@ -205,6 +208,7 @@ Exibe informações detalhadas sobre um podcast específico, incluindo sua capa,
 **Então** serei direcionado para a tela de lista de episódios.
 <br>
 <br>
+
 ### Cenário: Voltar para a tela anterior
 
 **Dado** que estou na tela de detalhes do podcast.
@@ -212,6 +216,7 @@ Exibe informações detalhadas sobre um podcast específico, incluindo sua capa,
 **Então** serei direcionado de volta para a tela principal (home).
 <br>
 <br>
+
 ### Tela 04: Tela de Lista de Episódios
 
 ![Referência  Protótipo](/img/tela_epsodios_recentes.png)
@@ -301,7 +306,6 @@ Exibe a interface para a reprodução de um episódio de podcast, incluindo cont
 **US05.03:** "Como um usuário, eu quero ter opções de navegação (voltar) e acesso a 'mais opções' na tela de reprodução para gerenciar o episódio."
 
 ### Regras de Negócio:
-
 **RN05.01:** A tela deve exibir o título do episódio ("Episode 102").
 
 **RN05.02:** O nome do podcast ("The Official PodSpot Podcast") deve ser exibido abaixo do título do episódio.
@@ -385,7 +389,7 @@ Exibe a interface para a reprodução de um episódio de podcast, incluindo cont
 
 Descrevem como o sistema deve se comportar, abrangendo aspectos como desempenho, usabilidade, segurança e confiabilidade. Apesar de as telas fornecidas focarem nas funcionalidades, podemos inferir os seguintes requisitos não funcionais essenciais para o sucesso do aplicativo "PodSpot".
 
-### **A prioridade**
+### A prioridade
 Indica a importância do RNF para o sucesso do projeto e do produto. É uma medida do "nível de risco" associado ao RNF.
 
 **Alta:** Essencial para o funcionamento básico, segurança, conformidade legal ou que causa grande impacto negativo se não atendido. Geralmente, falhas nesse RNF impediriam o lançamento do produto.
@@ -394,7 +398,7 @@ Indica a importância do RNF para o sucesso do projeto e do produto. É uma medi
 
 **Baixa:** Desejável, mas não crítico para a funcionalidade principal ou para a experiência imediata. Pode ser implementado em versões futuras.
 
-### **A Origem** 
+### A Origem 
 Explica de onde o requisito foi derivado ou por que ele existe.
 
 **Inferido do Protótipo:** Significa que o RNF foi deduzido a partir da análise das telas e do fluxo do aplicativo, mesmo que não estivesse explicitamente escrito.
@@ -434,7 +438,7 @@ Explica de onde o requisito foi derivado ou por que ele existe.
 <br>
 <br>
 
-### **Usabilidade (Usability)**
+### Usabilidade (Usability)
 
 **NFR05:** "A interface do usuário deve ser intuitiva e de fácil navegação, permitindo que um usuário encontre e reproduza um podcast em no máximo 3 cliques a partir da tela principal."
 
@@ -462,7 +466,7 @@ Explica de onde o requisito foi derivado ou por que ele existe.
 <br>
 <br>
 
-### **Confiabilidade (Reliability)**
+### Confiabilidade (Reliability)
 
 **NFR09:** "O aplicativo deve ser estável e não apresentar crashes inesperados durante o uso contínuo (ex: após 4 horas de reprodução ininterrupta)."
 
@@ -483,7 +487,8 @@ Explica de onde o requisito foi derivado ou por que ele existe.
 >**Origem: Boa Prática de Mercado** (Recurso comum em players de áudio/vídeo).
 <br>
 <br>
-### **Segurança (Security)**
+
+### Segurança (Security)
 
 **NFR12:** "Caso haja funcionalidades de login/cadastro (inferido pelo ícone de perfil), os dados do usuário devem ser protegidos com criptografia adequada (ex: HTTPS para comunicação, criptografia para dados armazenados)."
 
@@ -498,14 +503,15 @@ Explica de onde o requisito foi derivado ou por que ele existe.
 >**Origem: Requisito de Negócio, Boa Prática de Mercado.**
 <br>
 <br>
-### **Compatibilidade (Compatibility)**
+
+### Compatibilidade (Compatibility)
 
 **NFR14:** O aplicativo deve ser compatível com as versões mais recentes dos sistemas operacionais móveis (iOS e Android) e suas duas versões anteriores.
 
 **NFR15:** O aplicativo deve funcionar corretamente em diferentes tamanhos e resoluções de tela de dispositivos móveis.
 <br>
 <br>
-### **Manutenibilidade (Maintainability)**
+### Manutenibilidade (Maintainability)
 
 **NFR16:** O código-fonte do aplicativo deve seguir padrões de codificação e ser bem documentado para facilitar futuras manutenções e evoluções. (Este é um requisito mais interno, mas crucial para a longevidade do produto).
 
