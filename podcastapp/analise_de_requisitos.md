@@ -27,7 +27,7 @@ O escopo inicial do projeto **PodSpot**, conforme as telas analisadas, abrange a
 
 ### Protótipo
 **Versão: 1.0**
- - protótipo do figma: [PodSpot](https://www.figma.com/design/ECIzSfAWHcPJSi3HxkKdUr/PodcastAppChallenge?m=auto&t=WBSxPDFw8EJ0oCFy-1)
+- protótipo do figma: [PodSpot](https://www.figma.com/design/ECIzSfAWHcPJSi3HxkKdUr/PodcastAppChallenge?m=auto&t=WBSxPDFw8EJ0oCFy-1)
 
 
 
@@ -43,7 +43,7 @@ Para os Critérios de Aceite, utilizamos a linguagem Gherkin (BDD).
 
 
 ### Descrição da Tela:
- É a primeira tela que o usuário vê ao abrir o aplicativo, com o logotipo do PodSpot, uma breve descrição e um botão para iniciar.
+É a primeira tela que o usuário vê ao abrir o aplicativo, com o logotipo do PodSpot, uma breve descrição e um botão para iniciar.
 
 ### User Stories: 
 Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descrição do aplicativo para entender sua proposta.
@@ -212,7 +212,9 @@ Exibe informações detalhadas sobre um podcast específico, incluindo sua capa,
 ### Cenário: Voltar para a tela anterior
 
 **Dado** que estou na tela de detalhes do podcast.
+
 **Quando** eu toco no ícone de "voltar" (seta para a esquerda).
+
 **Então** serei direcionado de volta para a tela principal (home).
 <br>
 <br>
@@ -250,6 +252,7 @@ Exibe uma lista de todos os episódios de um podcast, com informações detalhad
 <br>
 
 ### Critérios de Aceite (Gherkin - BDD):
+<br>
 
 ### Cenário: Visualização da lista de episódios
 
@@ -408,6 +411,7 @@ Explica de onde o requisito foi derivado ou por que ele existe.
 **Requisito de Negócio/Stakeholder:** Derivado de uma necessidade explícita do negócio ou de um stakeholder (mesmo que, neste exercício, você esteja simulando o levantamento).
 
 **Norma/Legislação:** Requisitos ditados por leis, regulamentações ou normas técnicas (como a ISO/IEC 25010 que você já mencionou para classificação).
+<br>
 <br>
 
 ### Desempenho (Performance Efficiency)
