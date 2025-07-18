@@ -55,11 +55,12 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 
 **RN01.03:** Deve haver um botão de ação com o texto "Get Started".
 <br>
+<br>
 
 ### Critérios de Aceite (Gherkin - BDD):
 <br>
 
-#### Cenário: Visualização da tela inicial
+### Cenário: Visualização da tela inicial
 
 **Dado** que o aplicativo PodSpot é aberto pela primeira vez 
 
@@ -71,14 +72,16 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 
 **E** o botão "Get Started" deve ser exibido e estar clicável.
 <br>
+<br>
 
-#### Cenário: Navegação a partir do botão "Get Started"
+### Cenário: Navegação a partir do botão "Get Started"
 
 **Dado** que estou na tela inicial do aplicativo PodSpot.
 
 **Quando** eu toco no botão "Get Started".
 
 **Então** serei direcionado para a tela principal (home) do aplicativo.
+<br>
 <br>
 
 ### Tela 02: Tela Principal (Home): 
@@ -106,11 +109,11 @@ Exibe um conteúdo diversificado como "Top 10 Podcasts", "Categories" e "Recomme
 
 **RN02.05:** A barra de navegação inferior deve conter os ícones "Home", "Microfone" e "Pesquisa".
 <br>
+<br>
 
 ### Critérios de Aceite (Gherkin - BDD):
 <br>
-
-#### Cenário: Visualização dos elementos da tela Home
+### Cenário: Visualização dos elementos da tela Home
 
 **Dado** que estou na tela principal do aplicativo PodSpot.
 
@@ -126,15 +129,17 @@ Exibe um conteúdo diversificado como "Top 10 Podcasts", "Categories" e "Recomme
 
 **E** a barra de navegação inferior com os ícones "Home", "Microfone" e "Pesquisa" deve ser exibida e funcional.
 <br>
+<br>
 
-#### Cenário: Navegação para a tela de detalhes do Podcast
+### Cenário: Navegação para a tela de detalhes do Podcast
 
 **Dado** que estou na tela principal do aplicativo PodSpot
 
 **Quando** eu toco em um dos podcasts da seção "Top 10 Podcasts" (ex: "The Official PodSpot Podcast").
 
 **Então** serei direcionado para a tela de detalhes do podcast selecionado.
-
+<br>
+<br>
 
 ### Tela 03: Tela de Detalhes do Podcast
 
@@ -168,11 +173,11 @@ Exibe informações detalhadas sobre um podcast específico, incluindo sua capa,
 
 **RN03.07:** Deve haver um ícone de coração no canto superior direito para favoritar o podcast.
 <br>
+<br>
 
 ### Critérios de Aceite (Gherkin - BDD):
 <br>
-
-#### Cenário: Visualização dos detalhes do podcast
+### Cenário: Visualização dos detalhes do podcast
 
 **Dado** que eu naveguei para a tela de detalhes de um podcast.
 
@@ -190,8 +195,8 @@ Exibe informações detalhadas sobre um podcast específico, incluindo sua capa,
 
 **E** o ícone de coração para favoritar deve ser exibido e estar clicável.
 <br>
-
- #### Cenário: Navegação para a lista completa de episódios
+<br>
+ ### Cenário: Navegação para a lista completa de episódios
 
 **Dado** que estou na tela de detalhes do podcast.
 
@@ -199,14 +204,14 @@ Exibe informações detalhadas sobre um podcast específico, incluindo sua capa,
 
 **Então** serei direcionado para a tela de lista de episódios.
 <br>
-
-#### Cenário: Voltar para a tela anterior
+<br>
+### Cenário: Voltar para a tela anterior
 
 **Dado** que estou na tela de detalhes do podcast.
 **Quando** eu toco no ícone de "voltar" (seta para a esquerda).
 **Então** serei direcionado de volta para a tela principal (home).
 <br>
-
+<br>
 ### Tela 04: Tela de Lista de Episódios
 
 ![Referência  Protótipo](/img/tela_epsodios_recentes.png)
@@ -236,11 +241,12 @@ Exibe uma lista de todos os episódios de um podcast, com informações detalhad
 **RN04.05:** Deve haver um ícone de "voltar" (seta para a esquerda) no canto superior esquerdo.
 
 **RN04.06:** Deve haver um ícone de filtro/ordenar no canto superior direito.
-
+<br>
+<br>
 
 ### Critérios de Aceite (Gherkin - BDD):
 
-#### Cenário: Visualização da lista de episódios
+### Cenário: Visualização da lista de episódios
 
 **Dado** que eu naveguei para a tela de lista de episódios.
 
@@ -258,8 +264,9 @@ Exibe uma lista de todos os episódios de um podcast, com informações detalhad
 
 **E** o ícone de filtro/ordenar deve ser exibido e estar clicável.
 <br>
+<br>
 
-#### Cenário: Reprodução de um episódio a partir da lista
+### Cenário: Reprodução de um episódio a partir da lista
 
 **Dado** que estou na tela de lista de episódios
 
@@ -267,14 +274,16 @@ Exibe uma lista de todos os episódios de um podcast, com informações detalhad
 
 **Então** serei direcionado para a tela de reprodução do episódio.
 <br>
+<br>
 
-#### Cenário: Voltar para a tela anterior
+### Cenário: Voltar para a tela anterior
 
 **Dado** que estou na tela de lista de episódios.
 
 **Quando** eu toco no ícone de "voltar" (seta para a esquerda).
 
 **Então** serei direcionado de volta para a tela de detalhes do podcast.
+<br>
 <br>
 
 ### Tela 05: Tela de Reprodução do Episódio
@@ -292,6 +301,7 @@ Exibe a interface para a reprodução de um episódio de podcast, incluindo cont
 **US05.03:** "Como um usuário, eu quero ter opções de navegação (voltar) e acesso a 'mais opções' na tela de reprodução para gerenciar o episódio."
 
 ### Regras de Negócio:
+
 **RN05.01:** A tela deve exibir o título do episódio ("Episode 102").
 
 **RN05.02:** O nome do podcast ("The Official PodSpot Podcast") deve ser exibido abaixo do título do episódio.
@@ -304,10 +314,12 @@ Exibe a interface para a reprodução de um episódio de podcast, incluindo cont
 
 **RN05.06:** Deve haver um ícone de três pontos no canto superior direito para "mais opções".
 <br>
+<br>
 
 ### Critérios de Aceite (Gherkin - BDD):
+<br>
 
-#### Cenário: Visualização da tela de reprodução
+### Cenário: Visualização da tela de reprodução
 
 **Dado** que eu iniciei a reprodução de um episódio.
 
@@ -323,8 +335,9 @@ Exibe a interface para a reprodução de um episódio de podcast, incluindo cont
 
 **E** o ícone de três pontos (mais opções) deve ser exibido e estar clicável.
 <br>
+<br>
 
-#### Cenário: Controle de reprodução - Pausar
+### Cenário: Controle de reprodução - Pausar
 
 **Dado** que um episódio está sendo reproduzido na tela de reprodução.
 
@@ -334,8 +347,9 @@ Exibe a interface para a reprodução de um episódio de podcast, incluindo cont
 
 **E** o ícone do botão deve mudar para "play".
 <br>
+<br>
 
-#### Cenário: Controle de reprodução - Iniciar
+### Cenário: Controle de reprodução - Iniciar
 
 **Dado** que um episódio está pausado na tela de reprodução.
 
@@ -345,8 +359,9 @@ Exibe a interface para a reprodução de um episódio de podcast, incluindo cont
 
 **E** o ícone do botão deve mudar para "pause".
 <br>
+<br>
 
-#### Cenário: Voltar para a tela anterior
+### Cenário: Voltar para a tela anterior
 
 **Dado** que estou na tela de reprodução do episódio.
 
@@ -354,8 +369,9 @@ Exibe a interface para a reprodução de um episódio de podcast, incluindo cont
 
 **Então** serei direcionado de volta para a tela de lista de episódios.
 <br>
+<br>
 
-#### Cenário: Mais opções de comando
+### Cenário: Mais opções de comando
 
 **Dado** que estou na tela de reprodução do episódio.
 
@@ -363,12 +379,13 @@ Exibe a interface para a reprodução de um episódio de podcast, incluindo cont
 
 **Então** exibirá um drawer vertical com mais opções de comando para acessar.
 <br>
+<br>
 
 ### Requisitos Não Funcionais 
 
 Descrevem como o sistema deve se comportar, abrangendo aspectos como desempenho, usabilidade, segurança e confiabilidade. Apesar de as telas fornecidas focarem nas funcionalidades, podemos inferir os seguintes requisitos não funcionais essenciais para o sucesso do aplicativo "PodSpot".
 
-#### **A prioridade**
+### **A prioridade**
 Indica a importância do RNF para o sucesso do projeto e do produto. É uma medida do "nível de risco" associado ao RNF.
 
 **Alta:** Essencial para o funcionamento básico, segurança, conformidade legal ou que causa grande impacto negativo se não atendido. Geralmente, falhas nesse RNF impediriam o lançamento do produto.
@@ -377,7 +394,7 @@ Indica a importância do RNF para o sucesso do projeto e do produto. É uma medi
 
 **Baixa:** Desejável, mas não crítico para a funcionalidade principal ou para a experiência imediata. Pode ser implementado em versões futuras.
 
-#### **A Origem** 
+### **A Origem** 
 Explica de onde o requisito foi derivado ou por que ele existe.
 
 **Inferido do Protótipo:** Significa que o RNF foi deduzido a partir da análise das telas e do fluxo do aplicativo, mesmo que não estivesse explicitamente escrito.
@@ -389,7 +406,7 @@ Explica de onde o requisito foi derivado ou por que ele existe.
 **Norma/Legislação:** Requisitos ditados por leis, regulamentações ou normas técnicas (como a ISO/IEC 25010 que você já mencionou para classificação).
 <br>
 
-#### Desempenho (Performance Efficiency)
+### Desempenho (Performance Efficiency)
 
 **NFR01:** O aplicativo deve carregar a tela inicial em no máximo 3 segundos em redes 4G/Wi-Fi.
 
@@ -415,8 +432,9 @@ Explica de onde o requisito foi derivado ou por que ele existe.
 
 >**Origem: Inferido do Protótipo** (Representação visual da progressão), **Boa Prática de Mercado.**
 <br>
+<br>
 
-#### **Usabilidade (Usability)**
+### **Usabilidade (Usability)**
 
 **NFR05:** "A interface do usuário deve ser intuitiva e de fácil navegação, permitindo que um usuário encontre e reproduza um podcast em no máximo 3 cliques a partir da tela principal."
 
@@ -441,17 +459,16 @@ Explica de onde o requisito foi derivado ou por que ele existe.
 >**Prioridade: Alta** (A falta de resposta a toques torna o aplicativo inutilizável).
 
 >**Origem: Boa Prática de Mercado** (Expectativa básica de aplicativos móveis).
+<br>
+<br>
 
-
-
-#### **Confiabilidade (Reliability)**
+### **Confiabilidade (Reliability)**
 
 **NFR09:** "O aplicativo deve ser estável e não apresentar crashes inesperados durante o uso contínuo (ex: após 4 horas de reprodução ininterrupta)."
 
 >**Prioridade: Altíssima** (Crashes destroem a experiência do usuário e a reputação do aplicativo).
 
 >**Origem: Requisito de Negócio** (Qualidade fundamental do produto), Boa Prática de Mercado.
-
 
 **NFR10:** "A reprodução de áudio deve ser contínua e sem interrupções inesperadas, a menos que a conexão com a internet seja perdida."
 
@@ -464,8 +481,9 @@ Explica de onde o requisito foi derivado ou por que ele existe.
 >**Prioridade: Média** (Importante para a conveniência do usuário, mas não impede a funcionalidade principal).
 
 >**Origem: Boa Prática de Mercado** (Recurso comum em players de áudio/vídeo).
-
-#### **Segurança (Security)**
+<br>
+<br>
+### **Segurança (Security)**
 
 **NFR12:** "Caso haja funcionalidades de login/cadastro (inferido pelo ícone de perfil), os dados do usuário devem ser protegidos com criptografia adequada (ex: HTTPS para comunicação, criptografia para dados armazenados)."
 
@@ -478,14 +496,16 @@ Explica de onde o requisito foi derivado ou por que ele existe.
 >**Prioridade: Altíssima** (Prevenção de fraudes e acesso indevido a dados).
 
 >**Origem: Requisito de Negócio, Boa Prática de Mercado.**
-
-#### **Compatibilidade (Compatibility)**
+<br>
+<br>
+### **Compatibilidade (Compatibility)**
 
 **NFR14:** O aplicativo deve ser compatível com as versões mais recentes dos sistemas operacionais móveis (iOS e Android) e suas duas versões anteriores.
 
 **NFR15:** O aplicativo deve funcionar corretamente em diferentes tamanhos e resoluções de tela de dispositivos móveis.
-
-#### **Manutenibilidade (Maintainability)**
+<br>
+<br>
+### **Manutenibilidade (Maintainability)**
 
 **NFR16:** O código-fonte do aplicativo deve seguir padrões de codificação e ser bem documentado para facilitar futuras manutenções e evoluções. (Este é um requisito mais interno, mas crucial para a longevidade do produto).
 
