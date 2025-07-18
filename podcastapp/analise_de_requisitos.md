@@ -3,7 +3,7 @@
 
 
  
-Este projeto foi criado com objetivo de praticar o **levantamento de requisitos** funcionais e não funcionais do aplicativo móvel "Podspot", com base na primeira versão do protótipo de telas fornecidas para o projeto. O objetivo é estabelecer uma compreensão clara das funcionalidades esperadas do sistema, servindo como base para o desenvolvimento, testes e validação do produto.
+Este projeto foi criado com objetivo de praticar o **levantamento de requisitos** funcionais e não funcionais do aplicativo móvel "PodSpot", com base na primeira versão do protótipo de telas fornecidas para o projeto. O objetivo é estabelecer uma compreensão clara das funcionalidades esperadas do sistema, servindo como base para o desenvolvimento, testes e validação do produto.
 
 ## Visão Geral
 O PodSpot é um aplicativo mobile para descoberta, organização e reprodução de podcasts. O objetivo é centralizar o acesso aos principais podcasts, permitindo ao usuário navegar por categorias, visualizar detalhes dos programas, ouvir episódios e gerenciar suas preferências.
@@ -43,13 +43,13 @@ Para os Critérios de Aceite, utilizamos a linguagem Gherkin (BDD).
 
 
 #### Descrição da Tela:
- É a primeira tela que o usuário vê ao abrir o aplicativo, com o logotipo do Podspot, uma breve descrição e um botão para iniciar.
+ É a primeira tela que o usuário vê ao abrir o aplicativo, com o logotipo do PodSpot, uma breve descrição e um botão para iniciar.
 
 #### User Stories: 
 Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descrição do aplicativo para entender sua proposta.
 
 #### Regras de Negócio:
-**RN01.01:** A tela inicial deve conter o nome do aplicativo "Podspot".
+**RN01.01:** A tela inicial deve conter o nome do aplicativo "PodSpot".
 **RN01.02:** Deve haver uma frase descritiva: "Listen to all of your favorite podcasts in one spot.".
 **RN01.03:** Deve haver um botão de ação com o texto "Get Started".
 <br>
@@ -58,15 +58,15 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 <br>
 
 **Cenário: Visualização da tela inicial**
-**Dado** que o aplicativo Podspot é aberto pela primeira vez
+**Dado** que o aplicativo PodSpot é aberto pela primeira vez
 **Quando** a tela inicial é carregada
-**Então** o título "Podspot" deve ser exibido na tela
+**Então** o título "PodSpot" deve ser exibido na tela
 **E** a descrição "Listen to all of your favorite podcasts in one spot." deve ser exibida
 **E** o botão "Get Started" deve ser exibido e estar clicável.
 <br>
 
 **Cenário: Navegação a partir do botão "Get Started"**
-**Dado** que estou na tela inicial do aplicativo Podspot.
+**Dado** que estou na tela inicial do aplicativo PodSpot.
 **Quando** eu toco no botão "Get Started".
 **Então** serei direcionado para a tela principal (home) do aplicativo.
 <br>
@@ -98,7 +98,7 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 <br>
 
 **Cenário: Visualização dos elementos da tela Home**
-**Dado** que estou na tela principal do aplicativo Podspot.
+**Dado** que estou na tela principal do aplicativo PodSpot.
 **Quando** a tela é carregada.
 **Então** a seção "Top 10 Podcasts" deve ser visível com pelo menos 3 podcasts exibidos.
 **E** a seção "Categories" deve ser visível com pelo menos 4 categorias e o botão "See All".
@@ -108,8 +108,8 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 <br>
 
 **Cenário: Navegação para a tela de detalhes do Podcast**
-**Dado** que estou na tela principal do aplicativo Podspot.
-**Quando** eu toco em um dos podcasts da seção "Top 10 Podcasts" (ex: "The Official Podspot Podcast").
+**Dado** que estou na tela principal do aplicativo PodSpot.
+**Quando** eu toco em um dos podcasts da seção "Top 10 Podcasts" (ex: "The Official PodSpot Podcast").
 **Então** serei direcionado para a tela de detalhes do podcast selecionado.
 
 
@@ -130,7 +130,7 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 
 #### Regras de Negócio:
 
-**RN03.01:** A tela deve exibir a imagem de capa e o título do podcast ("The Official Podspot Podcast").
+**RN03.01:** A tela deve exibir a imagem de capa e o título do podcast ("The Official PodSpot Podcast").
 **RN03.02:** A descrição do podcast deve ser exibida, e se for longa, deve haver a opção "see more".
 **RN03.03**: A classificação "TOP 10 PODCAST" deve ser visível, se aplicável.
 **RN03.04:** Deve haver uma seção com o título "Recent Episodes".
@@ -230,7 +230,7 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 
 #### Regras de Negócio:
 **RN05.01:** A tela deve exibir o título do episódio ("Episode 102").
-**RN05.02:** O nome do podcast ("The Official Podspot Podcast") deve ser exibido abaixo do título do episódio.
+**RN05.02:** O nome do podcast ("The Official PodSpot Podcast") deve ser exibido abaixo do título do episódio.
 **RN05.03:** Deve haver uma barra de progresso do áudio indicando o tempo decorrido (ex: "0:00") e o tempo total (ex: "37:01").
 **RN05.04:** A tela deve conter os botões de controle de reprodução: "voltar 10 segundos", "play/pause" e "avançar 10 segundos".
 **RN05.05:** Deve haver um ícone de "voltar" (seta para a esquerda) no canto superior esquerdo.
@@ -277,7 +277,7 @@ Como um novo usuário, eu quero ver uma tela de boas-vindas com uma breve descri
 
 ### Requisitos Não Funcionais 
 
-Descrevem como o sistema deve se comportar, abrangendo aspectos como desempenho, usabilidade, segurança e confiabilidade. Apesar de as telas fornecidas focarem nas funcionalidades, podemos inferir os seguintes requisitos não funcionais essenciais para o sucesso do aplicativo "Podspot".
+Descrevem como o sistema deve se comportar, abrangendo aspectos como desempenho, usabilidade, segurança e confiabilidade. Apesar de as telas fornecidas focarem nas funcionalidades, podemos inferir os seguintes requisitos não funcionais essenciais para o sucesso do aplicativo "PodSpot".
 
 #### **A prioridade**
 Indica a importância do RNF para o sucesso do projeto e do produto. É uma medida do "nível de risco" associado ao RNF.
@@ -301,99 +301,105 @@ Explica de onde o requisito foi derivado ou por que ele existe.
 <br>
 
 #### Desempenho (Performance Efficiency)
+
 **NFR01:** O aplicativo deve carregar a tela inicial em no máximo 3 segundos em redes 4G/Wi-Fi.
 
-**Prioridade: Alta** (Carga inicial impacta diretamente a primeira impressão e retenção do usuário, crucial para o sucesso).
+>>**Prioridade: Alta** (Carga inicial impacta diretamente a primeira impressão e retenção do usuário, crucial para o sucesso).
 
-**Origem: Boa Prática de Mercado** (Expectativa de usuários por aplicativos rápidos), Inferido do Protótipo (Aplicativos modernos devem ser rápidos).
+>>**Origem: Boa Prática de Mercado** (Expectativa de usuários por aplicativos rápidos), **Inferido do Protótipo** (Aplicativos modernos devem ser rápidos).
 
 **NFR02:** "A transição entre as telas (Home, Detalhes do Podcast, Lista de Episódios, Reprodução) deve ser fluida e ocorrer em no máximo 1 segundo."
 
-**Prioridade: Alta** (Fluidez na navegação é essencial para a usabilidade e experiência do usuário).
+>>**Prioridade: Alta** (Fluidez na navegação é essencial para a usabilidade e experiência do usuário).
 
-**Origem: Boa Prática de Mercado** (Padrão de experiência de usuário para apps mobile).
+>>**Origem: Boa Prática de Mercado** (Padrão de experiência de usuário para apps mobile).
 
 **NFR03:** "A reprodução de um episódio deve iniciar em no máximo 2 segundos após o clique no botão 'Play', considerando uma conexão de internet estável."
 
-**Prioridade: Alta** (Impacta diretamente a função principal do aplicativo: ouvir podcasts. Atrasos aqui causariam frustração imediata).
+>>**Prioridade: Alta** (Impacta diretamente a função principal do aplicativo: ouvir podcasts. Atrasos aqui causariam frustração imediata).
 
-**Origem: Inferido do Protótipo** (Função central da reprodução), Boa Prática de Mercado.
+>>**Origem: Inferido do Protótipo** (Função central da reprodução), **Boa Prática de Mercado.**
 
 **NFR04:** "A barra de progresso da reprodução deve ser atualizada em tempo real, sem atrasos perceptíveis."
 
-**Prioridade: Média** (Um leve atraso não impede o uso, mas afeta a usabilidade).
+>>**Prioridade: Média** (Um leve atraso não impede o uso, mas afeta a usabilidade).
 
-**Origem: Inferido do Protótipo** (Representação visual da progressão), Boa Prática de Mercado.
-
-
+>>**Origem: Inferido do Protótipo** (Representação visual da progressão), **Boa Prática de Mercado.**
+<br>
 
 #### **Usabilidade (Usability)**
+
 **NFR05:** "A interface do usuário deve ser intuitiva e de fácil navegação, permitindo que um usuário encontre e reproduza um podcast em no máximo 3 cliques a partir da tela principal."
 
-**Prioridade: Alta** (Diretamente ligada à satisfação do usuário e ao objetivo de "facilitar a descoberta").
+>>**Prioridade: Alta** (Diretamente ligada à satisfação do usuário e ao objetivo de "facilitar a descoberta").
 
-**Origem: Inferido do Protótipo** (Layout visa facilidade), Requisito de Negócio (Facilidade de uso é um diferencial competitivo), Boa Prática de Mercado.
+>>**Origem: Inferido do Protótipo** (Layout visa facilidade), **Requisito de Negócio** (Facilidade de uso é um diferencial competitivo), **Boa Prática de Mercado.**
 
 **NFR06:** "Os ícones e textos devem ser claros e legíveis em diferentes tamanhos de tela e orientações (retrato/paisagem)."
 
-**Prioridade: Alta** (Essencial para acessibilidade e uso em diversos dispositivos).
+>>**Prioridade: Alta** (Essencial para acessibilidade e uso em diversos dispositivos).
 
-**Origem: Boa Prática de Mercado** (Design responsivo), Norma (Padrões de acessibilidade inferidos).
+>>**Origem: Boa Prática de Mercado** (Design responsivo), Norma (Padrões de acessibilidade inferidos).
 
 **NFR07:** "O feedback visual para ações do usuário (ex: clique em botões, carregamento de conteúdo) deve ser imediato e claro."
 
-**Prioridade: Média** (Impacta a percepção de responsividade e evita que o usuário clique múltiplas vezes).
+>>**Prioridade: Média** (Impacta a percepção de responsividade e evita que o usuário clique múltiplas vezes).
 
-**Origem: Boa Prática de Mercado**(Design de UX/UI).
+>>**Origem: Boa Prática de Mercado** (Design de UX/UI).
 
 **NFR08:** "O aplicativo deve ser responsivo a toques, sem atrasos na resposta da interface."
 
-**Prioridade: Alta** (A falta de resposta a toques torna o aplicativo inutilizável).
+>>**Prioridade: Alta** (A falta de resposta a toques torna o aplicativo inutilizável).
 
-**Origem: Boa Prática de Mercado** (Expectativa básica de aplicativos móveis).
+>>**Origem: Boa Prática de Mercado** (Expectativa básica de aplicativos móveis).
 
 
 
 #### **Confiabilidade (Reliability)**
+
 **NFR09:** "O aplicativo deve ser estável e não apresentar crashes inesperados durante o uso contínuo (ex: após 4 horas de reprodução ininterrupta)."
 
-**Prioridade: Altíssima** (Crashes destroem a experiência do usuário e a reputação do aplicativo).
+>>**Prioridade: Altíssima** (Crashes destroem a experiência do usuário e a reputação do aplicativo).
 
-**Origem: Requisito de Negócio** (Qualidade fundamental do produto), Boa Prática de Mercado.
+>>**Origem: Requisito de Negócio** (Qualidade fundamental do produto), Boa Prática de Mercado.
 
 
 **NFR10:** "A reprodução de áudio deve ser contínua e sem interrupções inesperadas, a menos que a conexão com a internet seja perdida."
 
-**Prioridade: Alta** (Diretamente relacionada à função principal e à satisfação do usuário).
+>>**Prioridade: Alta** (Diretamente relacionada à função principal e à satisfação do usuário).
 
-**Origem: Requisito de Negócio, Boa Prática de Mercado.**
+>>**Origem: Requisito de Negócio, Boa Prática de Mercado.**
 
 **NFR11:** "O progresso do episódio deve ser salvo automaticamente, permitindo que o usuário retome a reprodução de onde parou."
 
-**Prioridade: Média** (Importante para a conveniência do usuário, mas não impede a funcionalidade principal).
+>>**Prioridade: Média** (Importante para a conveniência do usuário, mas não impede a funcionalidade principal).
 
-**Origem: Boa Prática de Mercado** (Recurso comum em players de áudio/vídeo).
+>>**Origem: Boa Prática de Mercado** (Recurso comum em players de áudio/vídeo).
 
 #### **Segurança (Security)**
+
 **NFR12:** "Caso haja funcionalidades de login/cadastro (inferido pelo ícone de perfil), os dados do usuário devem ser protegidos com criptografia adequada (ex: HTTPS para comunicação, criptografia para dados armazenados)."
 
-**Prioridade: Altíssima** (Questões de privacidade e conformidade legal).
+>>**Prioridade: Altíssima** (Questões de privacidade e conformidade legal).
 
-**Origem: Inferido do Protótipo** (Presença de perfil), Norma (GDPR, LGPD ou outras regulamentações de dados), Boa Prática de Mercado.
+>>**Origem: Inferido do Protótipo** (Presença de perfil), Norma (GDPR, LGPD ou outras regulamentações de dados), Boa Prática de Mercado.
 
 **NFR13:** "O aplicativo deve proteger contra acessos não autorizados a informações ou funcionalidades restritas do usuário."
 
-**Prioridade: Altíssima** (Prevenção de fraudes e acesso indevido a dados).
+>>**Prioridade: Altíssima** (Prevenção de fraudes e acesso indevido a dados).
 
-**Origem: Requisito de Negócio, Boa Prática de Mercado.**
+>>**Origem: Requisito de Negócio, Boa Prática de Mercado.**
 
 #### **Compatibilidade (Compatibility)**
+
 **NFR14:** O aplicativo deve ser compatível com as versões mais recentes dos sistemas operacionais móveis (iOS e Android) e suas duas versões anteriores.
+
 **NFR15:** O aplicativo deve funcionar corretamente em diferentes tamanhos e resoluções de tela de dispositivos móveis.
 
 #### **Manutenibilidade (Maintainability)**
+
 **NFR16:** O código-fonte do aplicativo deve seguir padrões de codificação e ser bem documentado para facilitar futuras manutenções e evoluções. (Este é um requisito mais interno, mas crucial para a longevidade do produto).
 
-**Prioridade: Média** (Impacta o custo e a velocidade de desenvolvimento a longo prazo).
+>>**Prioridade: Média** (Impacta o custo e a velocidade de desenvolvimento a longo prazo).
 
-**Origem: Boa Prática de Mercado** (Engenharia de Software), Requisito de Negócio (Redução de custos futuros).
+>>**Origem: Boa Prática de Mercado** (Engenharia de Software), Requisito de Negócio (Redução de custos futuros).
